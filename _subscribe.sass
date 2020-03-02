@@ -1,0 +1,81 @@
+//блок с подпиской, тоже почему то сжимается фото девушки
+.subscribe 
+    margin-top: 220px
+    display: flex
+    justify-content: space-between
+    background: linear-gradient(45deg, rgba(213, 210, 211, .5), rgba(214, 211, 213, .5)), url(img/surf.jpg) no-repeat center
+    background-size: cover
+    height: 438px
+    &-left 
+        display: flex
+        margin-top: 111px
+    &-girl 
+        height: 83px
+        width: 83px
+    &-citate 
+        font-size: 0.5cm
+        color: rgb( 34, 34, 36 )
+        font-style: italic
+        text-align: left
+        margin-bottom: 20px
+    &-text-block 
+        margin-left: 30px
+    &-citate-name 
+        font-size: 22px
+        color: $color-site-active
+        margin-bottom: 7px
+    &-citate-place 
+        color:rgb( 34, 34, 36 )
+    &-right 
+        margin-left: 50px
+        margin-top: 148px
+        text-align: center
+    &-h1 
+        font-size: 30px
+        color: rgb( 34, 34, 36 )
+        margin-bottom: 20px 
+    &-h3 
+        font-size: 20px
+        color: rgb( 34, 34, 36 )
+        margin-bottom: 20px
+    &-form 
+        display: flex
+        justify-content: center
+        align-items: center
+    &-input 
+        border-top-left-radius: 30px
+        border-bottom-left-radius: 30px
+        height: 62px
+        width: 300px
+        font-size: 15px
+        background-color: rgb( 214, 214, 214 ) 
+        color: rgb( 34, 34, 36 )
+        letter-spacing: 0.03em
+        padding-left: 36px
+        margin-left: 2px
+    &-button 
+        border-top-right-radius: 30px
+        border-bottom-right-radius: 30px
+        height: 60px
+        width: 120px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: $color-site-active 
+        font-size: 15px
+        font-weight: 300
+        color: #fff
+        letter-spacing: 0.03em  
+        &:hover
+            box-shadow: 1px 1px 15px $color-site-active
+
+.line 
+    height: 5px
+    width: 45px
+    background-color: rgb( 214, 214, 214 ) 
+    margin-right: 15px
+    margin-top: 50px
+    &:hover
+        background-color: $color-site-active
+    &-items 
+        display: flex

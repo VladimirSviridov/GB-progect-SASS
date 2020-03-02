@@ -1,0 +1,60 @@
+.new-arrivals
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 148px
+  background-color: #f8f3f4
+  &-left
+    font-size: 24px
+    font-weight: 900
+    color: $color-site-active
+    line-height: 20px
+    text-transform: uppercase
+  &-right, &-right-passive
+    font-size: 14px
+    font-weight: 300
+    color: #636363
+    text-transform: uppercase
+    &-passive::after
+      content: "/"
+    &-passive:hover
+        color: #b39797 
+    &-acitve
+      color: $color-site-active
+      &:hover
+        color: #b39797
+.category
+  padding-top: 59px
+.category-left
+  width: 243px
+  &-form
+    margin-left: 0
+    outline: none
+    border-bottom: 1px solid #ebebeb 
+    border-left: 5px solid $color-site-active
+    margin-bottom: 18px
+    display: block
+    padding-top: 2px
+    padding-bottom: 12px
+    &:hover
+      box-shadow: 0px 0px 3px 1px $color-site-active
+  &-browse
+    outline: none
+    background-color: #fff  
+    width: auto
+    height: auto
+  &-summary
+    font-size: 14px
+    font-weight: bold
+    color: #ef5b70
+    line-height: 20px
+    text-transform: uppercase   
+.drop
+    background-color: rgba(255, 255, 255, 1)
+    border-radius: 5px
+    padding: 12px 20px 
+    position: absolute  
+    display: none  
+    top: 46px
+    border: 1px solid #ececec 
+

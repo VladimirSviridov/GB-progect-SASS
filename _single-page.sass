@@ -1,0 +1,123 @@
+.product-example 
+    background-color: #f2f2f2
+    padding-top: 11px
+    padding-bottom: 42px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .button-prev-link, .button-next-link 
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #000
+        font-size: 14px
+        height: 40px
+        width: 40px
+        background-color: #e1e1e1
+        &:hover
+            background-color: $color-site-active
+.product-discription 
+    &-content
+        padding-top: 73px
+        padding-bottom: 122px
+        outline: 1px solid #f2f2f2
+        background-color: white
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        &-addres
+            font-size: 14px
+            font-weight: bold
+            color: $color-site-active
+            text-align: center
+            line-height: 24px
+        &-line 
+            margin-top: 15px
+            margin-bottom: 17px
+            height: 6px
+            width: 100px
+            background-color: $color-site-active
+        &-moschino
+            font-size: 18px
+            font-weight: 900
+            color: #4d4d4d
+            line-height: 24px
+            text-transform: uppercase   
+        &-p 
+            margin-top: 67px
+            width: 730px
+            font-size: 14px
+            font-weight: 300
+            color: #5e5e5e
+            text-align: center
+            line-height: 24px
+        &-price 
+            margin-top: 50px
+            font-size: 0.847cm
+            color: rgb( 239, 91, 112 )
+            font-weight: bold
+            line-height: 1   
+            &-line
+                margin-top: 43px
+                margin-bottom: 63px
+                width: 730px
+                border: 1px solid #f2f2f2
+        &-forms 
+            display: flex
+        &-button
+            margin-top: 28px
+            &:hover
+                box-shadow: 0 0 5px 2px $color-site-active    
+        &-button div
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 537px
+            height: 55px
+            border: 1px solid $color-site-active 
+        &-button div span
+            margin-left: 15px
+            font-size: 16px
+            font-weight: bold
+            color: #ef5b70 
+    .discr-info 
+        width: 500px
+        display: flex
+        justify-content: space-around
+        margin-top: 30px
+        &-main 
+            font-size: 14px
+            font-weight: bold
+            color: #b9b9b9
+            text-align: center
+            line-height: 24px
+        &-details 
+            color: #2f2f2f
+.also
+    margin-top: 119px
+    &-p
+        font-size: 24px
+        font-weight: 900
+        color: #4d4d4d
+        text-align: center
+        line-height: 20px
+        text-transform: uppercase
+    &-product
+        display: block
+        height: 280px
+        width: 261px
+        &:hover .also-star
+            display: flex
+    &-container
+        display: flex
+        align-items: center
+        justify-content: space-between  
+        margin-right: 18px  
+    &-star
+        display: none              
+.fa-star
+    font-size: 15px
+    color: #e4af48
+    text-align: center
+    text-transform: uppercase
