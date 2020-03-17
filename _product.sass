@@ -4,57 +4,317 @@
   align-items: center
   height: 148px
   background-color: #f8f3f4
+
   &-left
     font-size: 24px
     font-weight: 900
     color: $color-site-active
     line-height: 20px
     text-transform: uppercase
+
   &-right, &-right-passive
     font-size: 14px
     font-weight: 300
     color: #636363
     text-transform: uppercase
+
     &-passive::after
       content: "/"
+
     &-passive:hover
-        color: #b39797 
+      color: #b39797
+
     &-acitve
       color: $color-site-active
+
       &:hover
         color: #b39797
+
 .category
   padding-top: 59px
-.category-left
-  width: 243px
-  &-form
-    margin-left: 0
-    outline: none
-    border-bottom: 1px solid #ebebeb 
-    border-left: 5px solid $color-site-active
-    margin-bottom: 18px
-    display: block
-    padding-top: 2px
-    padding-bottom: 12px
-    &:hover
-      box-shadow: 0px 0px 3px 1px $color-site-active
-  &-browse
-    outline: none
-    background-color: #fff  
-    width: auto
-    height: auto
-  &-summary
+  display: flex
+
+  &-left
+    width: 243px
+
+    &-form
+      margin-left: 0
+      outline: none
+      border-bottom: 1px solid #ebebeb
+      border-left: 5px solid $color-site-active
+      margin-bottom: 18px
+      display: block
+      padding-top: 2px
+      padding-bottom: 12px
+
+      &:hover
+        box-shadow: 0 0 3px 1px $color-site-active
+
+    &-browse
+      outline: none
+      background-color: #fff
+      margin-left: 4px
+      width: auto
+      height: auto
+
+    &-flex
+      width: 193px
+
+    &-summary
+      font-size: 14px
+      font-weight: bold
+      color: #ef5b70
+      line-height: 20px
+      text-transform: uppercase
+
+      &-drop
+        font-size: 14px
+        color: #6f6e6e
+        line-height: 33px
+
+  &-right
+    max-width: 848px
+    margin-left: 49px
+
+    &-forms
+      display: flex
+
+    &-sort
+      height: 50px
+      background-color: #f3f3f3
+
+    &-products
+      &-a
+        display: flex
+        margin-top: 20px
+
+.size
+  width: 236px
+
+.size-checkbox
+  display: flex
+  flex-wrap: wrap
+
+.checkbox
+  margin-right: 15px
+
+  & + label
+    font-size: 14px
+    color: #6f6e6e
+    line-height: 20px
+    text-transform: uppercase
+    margin-right: 10px
+
+.price
+  width: 263px
+
+.trending
+  width: 176px
+
+  &__h2
     font-size: 14px
     font-weight: bold
-    color: #ef5b70
-    line-height: 20px
-    text-transform: uppercase   
-.drop
-    background-color: rgba(255, 255, 255, 1)
-    border-radius: 5px
-    padding: 12px 20px 
-    position: absolute  
-    display: none  
-    top: 46px
-    border: 1px solid #ececec 
+    color: #6f6e6e
+    text-transform: uppercase
+    margin-bottom: 25px
 
+  &__link
+    font-size: 14px
+    color: #6f6e6e
+    line-height: 30px
+
+    &:hover
+      color: $color-site-active
+
+    &:not(:nth-child(3n+1)):after
+      content: "    |    "
+      color: #dfdfdf
+
+.drop
+  background-color: rgba(255, 255, 255, 1)
+  border-radius: 5px
+  padding: 12px 20px
+  position: absolute
+  display: none
+  top: 46px
+  border: 1px solid #ececec
+
+.cart__product
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  &-discription-link
+    font-size: 12px
+    font-weight: bold
+    color: #222222
+    text-transform: uppercase
+
+    &:hover
+      color: $color-site-active
+
+  &-discription-price
+    font-size: 12px
+    color: $color-site-active
+
+  &-line
+    border: 1px solid #ececec
+    margin: 17px 0
+
+  &-total
+    display: flex
+    justify-content: space-between
+    margin: 19px 0
+
+  &-total span
+    font-size: 16px
+    font-weight: bold
+    color: #222222
+    text-transform: uppercase
+
+.cart__img:hover
+  transform: scale(1.1)
+  transition-duration: 0.7s
+
+.cart__product-button
+  width: 232px
+  height: 50px
+  display: flex
+  justify-content: center
+  align-items: center
+  border: 1px solid $color-site-active
+  margin-bottom: 11px
+
+  &-passive
+    border: 1px solid #4a4a4a
+
+  &-link
+    font-size: 14px
+    font-weight: bold
+    text-transform: uppercase
+    color: $color-site-active
+    padding: 17px 77px
+
+    &-passive
+      font-size: 14px
+      font-weight: bold
+      text-transform: uppercase
+      padding: 17px 74px
+      color: #4a4a4a
+
+      &:hover
+        box-shadow: 0 0 7px #4a4a4a
+
+    &:hover
+      box-shadow: 0 0 7px $color-site-active
+
+.fas
+  margin: 11px 0
+  font-size: 16px
+  color: #c0c0c0
+
+  &:hover
+    color: #4a4a4a
+
+.category-right-pagination
+  display: flex
+  justify-content: space-between
+  height: 44px
+
+.pagination__left
+  display: flex
+  justify-content: space-around
+  align-items: center
+  width: 261px
+  border: 1px solid #ebebeb
+  border-radius: 3px
+
+.pagination-link
+  font-size: 16px
+  font-weight: 300
+  color: #c4c4c4
+  padding: 8px
+
+  &:hover
+    color: $color-site-active
+
+.category-right-pagination
+  margin-top: 43px
+
+.pagination__right
+  width: 150px
+  display: flex
+  justify-content: center
+  align-items: center
+  border: 1px solid $color-site-active
+
+  &-link
+    font-size: 16px
+    font-weight: 300
+    color: $color-site-active
+    padding: 11px 47px
+
+    &:hover
+      box-shadow: 0 0 7px $color-site-active
+
+.product__features
+  background-color: $color-site-dark
+  height: 341px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-top: 110px
+
+  &-flex
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &-h2
+      font-size: 20px
+      font-weight: bold
+      color: #fbfbfb
+      letter-spacing: 0.03em
+      margin-top: 15px
+      margin-bottom: 15px
+
+    &-p
+      font-size: 14px
+      font-weight: 300
+      color: #fbfbfb
+      text-align: center
+      line-height: 24px
+      letter-spacing: 0.03em
+
+.category-right-sort
+  margin-top: 41px
+  display: flex
+  align-items: center
+
+  &-type, &-value
+    display: flex
+    text-align: center
+    height: 30px
+
+    &-drop-flex
+      width: 46px
+
+    &-browse
+      height: 30px
+      background: #fff
+
+    &-summary
+      margin-left: 0
+      margin-top: 7px
+
+    &-span
+      display: flex
+      justify-content: center
+      align-items: center
+      background: #fff
+      outline: 1px solid #e6e6e6
+      padding: 0 13px
+      margin-left: 10px
+
+.subscribe__product
+  margin-top: 0

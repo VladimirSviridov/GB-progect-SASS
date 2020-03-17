@@ -12,7 +12,7 @@ a
 
 /*центрирование раздела (вместо контейнера)*/
 .center
-   padding: 0 $calc
+  padding: 0 $calc
 
 @import "header"
 
@@ -92,19 +92,24 @@ a
 
 .banner-bg-1, .banner-bg-2, .banner-bg-3, .banner-bg-4
   width: 560px
+  transition-duration: 0.7s
 
   &:hover
-    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.17)
+    transform: scale(1.01)
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.17)
 //блок с перечнем товаров. Пронаименован криво, в следующий раз необходимо придерживаться вложенности
 .prod-item-height
   width: 261px
   margin-top: 50px
   position: relative
 
+
   &:hover .prod-img
+    transition-duration: 0.5s
     filter: brightness(50%)
 
   &:hover .product-add
+    transition-duration: 0.5s
     display: flex
 
 .product-add
@@ -120,6 +125,17 @@ a
   font-size: 13px
   font-weight: bold
   color: rgba(255, 255, 255, 1)
+
+  &-prod-l
+    @extend .product-add
+    width: 57px
+    top: 144px
+
+  &-prod-r
+    @extend .product-add
+    width: 57px
+    top: 144px
+    left: 136px
 
   &:hover
     box-shadow: 0 0 5px #fff
@@ -210,7 +226,7 @@ a
   letter-spacing: 0.03em
 
   &:hover
-    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.17)
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.17)
 //блок с особенностями кампании, почему то прыгают картинки        
 .feature
   display: flex
@@ -271,3 +287,7 @@ a
 @import "product"
 
 @import "single-page"
+
+@import "shopping-cart"
+
+@import "checkout"  

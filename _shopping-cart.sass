@@ -1,0 +1,214 @@
+.goods
+  margin-top: 90px
+
+  &__line
+    border: 1px solid #e2e2e2
+    margin: 21px 0
+
+  &__header
+    font-size: 13px
+    font-weight: bold
+    color: #222222
+    letter-spacing: -0.01em
+    line-height: 20px
+    text-transform: uppercase
+    display: grid
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr
+    justify-items: end
+
+    &-name
+      &-1
+        justify-self: start
+
+  &__item
+    display: grid
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr
+    justify-items: end
+    align-items: center
+
+    &-details
+      display: flex
+      justify-self: start
+
+      &-img
+        margin-right: 21px
+
+        &:hover
+          transform: scale(1.1)
+          transition-duration: 0.7s
+
+      &-discription
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+
+        &-link
+          font-weight: bold
+          font-size: 13px
+          color: #222222
+          text-transform: uppercase
+          margin-bottom: 38px
+
+        &-option
+          &-main
+            font-size: 13px
+            color: #575757
+            line-height: 20px
+
+          &-passive
+            font-size: 13px
+            font-weight: 300
+            color: #6f6e6e
+            line-height: 20px
+
+    &-option
+      font-size: 13px
+      color: #656565
+      line-height: 20px
+
+  &__footer
+    display: flex
+    justify-content: space-between
+
+    &-button
+      padding: 20px 38px
+      outline: 1px solid #e2e2e2
+      font-size: 14px
+      font-weight: bold
+      color: #4a4a4a
+      text-transform: uppercase
+
+      &:hover
+        outline: 1px solid $color-site-active
+        color: $color-site-active
+
+.option
+  &-1
+    margin-right: 20px
+
+  &-2
+    width: 10px
+    margin-right: 8px
+    padding: 10px 23px
+    outline: 1px solid #eaeaea
+
+  &-3
+    margin-right: 15px
+
+  &-4
+    margin-right: 15px
+
+  &-5
+    margin-right: 17px
+
+.apply
+  margin-top: 63px
+  display: flex
+  justify-content: space-between
+
+  &__line
+    width: 275px
+    border: 1px solid #e2e2e2
+    margin: 21px 40px
+
+  &__block
+    display: flex
+    flex-direction: column
+    width: 355px
+
+    &-head
+      margin-bottom: 22px
+      font-size: 16px
+      font-weight: bold
+      color: #222222
+      text-transform: uppercase
+
+      &-details
+        width: 335px
+        padding: 4px 10px
+        margin-bottom: 20px
+        outline: 1px solid #b1b1b1
+        background: #ffffff
+        font-size: 13px
+        font-weight: 300
+        color: #b1b1b1
+
+      &-drop
+        padding: 12px 100px 12px 20px
+
+    &-text
+      font-size: 16px
+      color: #222222
+      margin-bottom: 24px
+
+    &-input
+      height: 45px
+      width: 315px
+      outline: 1px solid #b1b1b1
+      padding: 0 20px
+      font-size: 13px
+      font-weight: 300
+      color: #b1b1b1
+      margin-bottom: 20px
+
+      &:hover
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17)
+
+    &-button
+      display: flex
+      justify-content: center
+      width: 100px
+      padding: 12px
+      outline: 1px solid #b1b1b1
+      font-size: 11px
+      font-weight: bold
+      color: #4a4a4a
+      text-transform: uppercase
+
+      &:hover
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17)
+
+    &-right
+      background-color: #f5f3f3
+      align-items: flex-end
+
+      &-div-1
+        margin: 40px 40px 14px 0
+
+      &-div-2
+        margin: 0 40px 14px 0
+
+    &-sub
+      font-size: 11px
+      color: #4a4a4a
+      text-transform: uppercase
+      margin-left: 15px
+
+    &-total
+      font-size: 16px
+      font-weight: bold
+      color: #222222
+      text-transform: uppercase
+
+      &-active
+        color: $color-site-active
+        margin-left: 15px
+
+      &-button
+        width: 273px
+        margin-right: 40px
+        padding: 19px 0
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 16px
+        font-weight: bold
+        color: #ffffff
+        text-transform: uppercase
+        background-color: $color-site-active
+
+        &:hover
+          box-shadow: 0px 0px 10px 0px $color-site-active
+
+.subscribe-shopping-cart
+  margin-top: 79px

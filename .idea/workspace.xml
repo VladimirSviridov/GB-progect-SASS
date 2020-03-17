@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="821f6555-7b50-41e7-9e48-a672dae78a46" name="Default Changelist" comment="" />
+    <list default="true" id="821f6555-7b50-41e7-9e48-a672dae78a46" name="Default Changelist" comment="Сделал визуальную часть проекта. Настраиваю git">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_checkout.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_shopping-cart.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/product/cart-product-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/product/cart-product-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/product/product-9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/shopping-cart/item-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/shopping-cart/item-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/shopping-cart/item-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopping-cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/_footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/_header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_product.sass" beforeDir="false" afterPath="$PROJECT_DIR$/_product.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_single-page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/_single-page.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_subscribe.sass" beforeDir="false" afterPath="$PROJECT_DIR$/_subscribe.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_vars.sass" beforeDir="false" afterPath="$PROJECT_DIR$/_vars.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/single-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/style.sass" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,13 +62,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YXHOzBqpCPyrHhPoGvq50Ba4yc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/npm/sass.cmd" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="add_unversioned_files" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -70,10 +103,32 @@
       <workItem from="1583081991818" duration="1680000" />
       <workItem from="1583084522955" duration="895000" />
       <workItem from="1583085441422" duration="1893000" />
+      <workItem from="1584437528479" duration="95000" />
+      <workItem from="1584445699212" duration="2280000" />
+      <workItem from="1584448082518" duration="695000" />
+      <workItem from="1584448798192" duration="1171000" />
+      <workItem from="1584449990766" duration="695000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Сделал визуальную часть проекта. Настраиваю git" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал визуальную часть проекта. Настраиваю git" />
   </component>
 </project>

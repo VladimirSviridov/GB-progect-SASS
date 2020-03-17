@@ -1,173 +1,225 @@
 //оформление header    
 .header
-    height: 100px
-    background-color: rgba(255, 255, 255, 1)
-    border: 1px solid rgba(236, 236, 236, 1)
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17)
+  height: 100px
+  background-color: rgba(255, 255, 255, 1)
+  border: 1px solid rgba(236, 236, 236, 1)
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17)
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  &-left,
+  &-right
     display: flex
     align-items: center
-    justify-content: space-between
-    &-left,
-    &-right
-        display: flex
-        align-items: center
-    &-form
-        display: flex
-        align-items: center
-        margin-left: 37px
-    &-logo-name,
-    &-letter
-        margin-left: -5px
-        font-size: 27px
-        font-weight: 300
-        color: #222222
-        letter-spacing: 0.03em
-        text-transform: uppercase
-    &-letter
-        font-weight: 900
-        color: rgba(241, 109, 127, 1)
-    &-form
-        outline: 1px solid #e6e6e6
-    &-browse
-        height: 38px
-        width: 87px
-        background-color: #f2f2f2
-        font-size: 14px
-        font-weight: 300
-        color: #222222
-        letter-spacing: 0.03em
-        outline: 1px solid #e6e6e6
-        position: relative
-    &-browse:hover
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17)
-    &-browse[open] .drop
-        display: flex
-        top: 38px
-        z-index: 1
-    &-summary
-        margin-top: 10px
-        margin-left: 10px 
-    &-browse-input
-        height: 34px
-        width: 317px
-        font-size: 14px
-        color: #a4a4a4
-        letter-spacing: 0.03em
-        padding-left: 16px
-        margin-left: 2px
-        margin-right: 16px
-    &-browse-button
-        outline: 1px solid #e6e6e6
-        width: 38px
-        background-color: #fff
-    &-browse-button:hover
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17)         
+
+  &-form
+    display: flex
+    align-items: center
+    margin-left: 37px
+
+  &-logo-name,
+  &-letter
+    margin-left: -5px
+    font-size: 27px
+    font-weight: 300
+    color: #222222
+    letter-spacing: 0.03em
+    text-transform: uppercase
+
+    &:hover
+      color: $color-site-active
+      text-shadow: 0 0 2px $color-site-active
+
+  &-letter
+    font-weight: 900
+    color: rgba(241, 109, 127, 1)
+
+  &-form
+    outline: 1px solid #e6e6e6
+
+  &-browse
+    height: 38px
+    width: 87px
+    background-color: #f2f2f2
+    font-size: 14px
+    font-weight: 300
+    color: #222222
+    letter-spacing: 0.03em
+    outline: 1px solid #e6e6e6
+    position: relative
+
+  &-browse:hover
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17)
+
+  &-browse[open] .drop
+    display: flex
+    top: 38px
+    z-index: 20
+
+  &-summary
+    margin-top: 10px
+    margin-left: 10px
+
+  &-browse-input
+    height: 34px
+    width: 317px
+    font-size: 14px
+    color: #a4a4a4
+    letter-spacing: 0.03em
+    padding-left: 16px
+    margin-left: 2px
+    margin-right: 16px
+
+  &-browse-button
+    outline: 1px solid #e6e6e6
+    width: 38px
+    background-color: #fff
+
+  &-browse-button:hover
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17)
 
 .logo
-    display: flex
-    align-items: center
-    &-image
-        margin-right: 13px
+  display: flex
+  align-items: center
+
+  &-image
+    margin-right: 13px
+
+    &:hover
+      filter: drop-shadow(0px 0px 10px $color-site-active)
 
 button, input
-    border: none
+  border: none
+
 button
-    height: 38px
+  height: 38px
+
 .button
-    @extend button 
-    &-account
-        width: 130px
-        display: flex
-        justify-content: center
-        align-items: center
-        background-color: $color-site-active
-        font-size: 15px
-        font-weight: 300
-        color: #fff
-        letter-spacing: 0.03em
-        position: relative
-    &-account:hover
-        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.17)
-    &-account:focus+.drop
-        display: flex
-        top: 70px
-        z-index: 1
+  @extend button
 
-.arrow
-    margin-left: 8px
-
-.cart-image
-    margin-right: 37px
-//оформление nav блока
-.nav
-    height: 51px
-
-.menu
-    list-style-type: none /* убираем точки в списке */
+  &-account
+    width: 130px
     display: flex
     justify-content: center
-    &-link 
-        display: block
-        padding: 17px 35px
-        font-size: 14px
-        font-weight: bold
-        color: rgba(34, 34, 34, 1)
-        text-transform: uppercase
-    &-list
-        position: relative
-        &:hover .drop
-            display: flex
+    align-items: center
+    background-color: $color-site-active
+    font-size: 15px
+    font-weight: 300
+    color: #fff
+    letter-spacing: 0.03em
+    position: relative
+
+  &-account:hover
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.17)
+
+  &-account:focus + .drop
+    display: flex
+    top: 70px
+    z-index: 1
+
+.arrow
+  margin-left: 8px
+
+.cart-image
+  margin-right: 37px
+
+  &:hover
+    filter: drop-shadow(0px 0px 10px #a3a3a3)
+
+  //&:hover .drop
+//Никак не получается сделать список покупок выпадающим при наведении на корзину,
+                 //при этом при наведении на элементы меню все выпадает корректно, разница в том, что элементы меню - li,
+                 //а здесь просто ссылка
+     display: flex
+     z-index: 1
+     top: 71px
+
+
+//оформление nav блока
+.nav
+  height: 51px
+
+.menu
+  list-style-type: none
+  /* убираем точки в списке */
+  display: flex
+  justify-content: center
+
+  &-link
+    display: block
+    padding: 17px 35px
+    font-size: 14px
+    font-weight: bold
+    color: rgba(34, 34, 34, 1)
+    text-transform: uppercase
+
+  &-list
+    position: relative
+
+    &:hover .drop
+      display: flex
 //оформление drop-блока, применяющегося на сайте                
 .drop
-    background-color: rgba(255, 255, 255, 1)
-    border-radius: 5px
-    padding: 12px 20px 
-    position: absolute  
-    display: none  
-    top: 46px
-    border: 1px solid #ececec                         
-    &-last
-        right: 0
-    &-center
-        left: -80px
-    &-flex
-        width: 234px
-        margin-right: 46px
-        &:last-of-type
-            margin-right: 0
-    &-h3
-        font-size: 14px
-        color: rgba(35, 35, 35, 1)
-        letter-spacing: 0.03em
-        text-transform: uppercase
-        border-bottom: 1px solid #e8e8e8
-        padding-bottom: 8px
-        padding-top: 8px
-        margin-bottom: 8px
-    &-link
-        font-size: 14px
-        color: #646464
-        letter-spacing: 0.03em
-        line-height: 28px
-        &:hover
-            color: $color-site-active
-    &-ul
-        list-style-type: none
-        &-link
-            margin-left: -17px
-            position: relative
-        &-img
-            margin-top: 18px
+  background-color: rgba(255, 255, 255, 1)
+  border-radius: 5px
+  padding: 12px 20px
+  position: absolute
+  display: none
+  top: 46px
+  border: 1px solid #ececec
 
-.super-sale
-    position: absolute
-    font-size: 22px
-    font-weight: 900
-    color: #ffffff
+  &-last
+    right: 0
+
+  &-center
+    left: -80px
+
+  &-flex
+    width: 234px
+    margin-right: 46px
+
+    &:last-of-type
+      margin-right: 0
+
+  &-h3
+    font-size: 14px
+    color: rgba(35, 35, 35, 1)
+    letter-spacing: 0.03em
+    text-transform: uppercase
+    border-bottom: 1px solid #e8e8e8
+    padding-bottom: 8px
+    padding-top: 8px
+    margin-bottom: 8px
+
+  &-link
+    font-size: 14px
+    color: #646464
     letter-spacing: 0.03em
     line-height: 28px
-    text-transform: uppercase
-    text-align: right
-    left: 174px
-    top: -47px
+
+    &:hover
+      color: $color-site-active
+
+  &-ul
+    list-style-type: none
+
+    &-link
+      margin-left: -17px
+      position: relative
+
+    &-img
+      margin-top: 18px
+
+.super-sale
+  position: absolute
+  font-size: 22px
+  font-weight: 900
+  color: #ffffff
+  letter-spacing: 0.03em
+  line-height: 28px
+  text-transform: uppercase
+  text-align: right
+  left: 174px
+  top: -47px
 //блок с предложениями
