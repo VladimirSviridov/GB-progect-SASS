@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="821f6555-7b50-41e7-9e48-a672dae78a46" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +41,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YXHOzBqpCPyrHhPoGvq50Ba4yc" />
@@ -84,7 +90,7 @@
       <workItem from="1584445699212" duration="2280000" />
       <workItem from="1584448082518" duration="695000" />
       <workItem from="1584448798192" duration="1171000" />
-      <workItem from="1584449990766" duration="1663000" />
+      <workItem from="1584449990766" duration="2473000" />
     </task>
     <task id="LOCAL-00001" summary="Сделал визуальную часть проекта. Настраиваю git">
       <created>1584450707351</created>
@@ -93,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584450707351</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Сделал визуальную часть проекта. Настраиваю git">
+      <created>1584451728640</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584451728640</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
