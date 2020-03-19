@@ -25,6 +25,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .header-left, .header-right {
   display: flex;
@@ -42,6 +44,8 @@ a {
   color: #222222;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .header-logo-name:hover, .header-letter:hover {
   color: #f16d7f;
@@ -64,6 +68,8 @@ a {
   letter-spacing: 0.03em;
   outline: 1px solid #e6e6e6;
   position: relative;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .header-browse:hover {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
@@ -91,6 +97,8 @@ a {
   outline: 1px solid #e6e6e6;
   width: 38px;
   background-color: #fff;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .header-browse-button:hover {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
@@ -102,6 +110,8 @@ a {
 }
 .logo-image {
   margin-right: 13px;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .logo-image:hover {
   filter: drop-shadow(0px 0px 10px #f16d7f);
@@ -126,11 +136,15 @@ button, .button {
   color: #fff;
   letter-spacing: 0.03em;
   position: relative;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .button-account:hover {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.17);
 }
 .button-account:focus + .drop {
+  transition: all;
+  transition-duration: 0.2s;
   display: flex;
   top: 70px;
   z-index: 1;
@@ -142,9 +156,15 @@ button, .button {
 
 .cart-image {
   margin-right: 37px;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .cart-image:hover {
   filter: drop-shadow(0px 0px 10px #a3a3a3);
+}
+.cart-image:hover + .drop {
+  display: flex;
+  top: 71px;
 }
 
 .nav {
@@ -167,6 +187,8 @@ button, .button {
 }
 .menu-list {
   position: relative;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .menu-list:hover .drop {
   display: flex;
@@ -209,6 +231,8 @@ button, .button {
   color: #646464;
   letter-spacing: 0.03em;
   line-height: 28px;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .drop-link:hover {
   color: #f16d7f;
@@ -358,6 +382,8 @@ button, .button {
   width: 57px;
   top: 144px;
   left: 136px;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .product-add:hover, .product-add-prod-l:hover, .product-add-prod-r:hover {
   box-shadow: 0 0 5px #fff;
@@ -464,6 +490,8 @@ button, .button {
   font-weight: 300;
   color: #fff;
   letter-spacing: 0.03em;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .button-product:hover {
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.17);
@@ -603,6 +631,8 @@ button, .button {
   font-weight: 300;
   color: #fff;
   letter-spacing: 0.03em;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .subscribe-button:hover {
   box-shadow: 1px 1px 15px #f16d7f;
@@ -614,6 +644,8 @@ button, .button {
   background-color: #d6d6d6;
   margin-right: 15px;
   margin-top: 50px;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .line:hover {
   background-color: #f16d7f;
@@ -641,6 +673,8 @@ button, .button {
   font-size: 0.564cm;
   color: #898989;
   line-height: 2.69;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .footer-column-text:hover {
   color: #f16d7f;
@@ -651,6 +685,8 @@ button, .button {
   color: #f16d7f;
   font-weight: bold;
   line-height: 1.444;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .footer-column-h3:hover {
   text-shadow: 0 0 2px #f16d7f;
@@ -682,6 +718,8 @@ button, .button {
   margin-left: 20px;
   color: #b2b2b2;
   padding: 10px 10px;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .fab:hover {
   background-color: #f16d7f;
@@ -707,6 +745,8 @@ button, .button {
   font-weight: 300;
   color: #636363;
   text-transform: uppercase;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .new-arrivals-right-passive::after, .new-arrivals-right-passive-passive::after {
   content: "/";
@@ -716,6 +756,8 @@ button, .button {
 }
 .new-arrivals-right-acitve, .new-arrivals-right-passive-acitve {
   color: #f16d7f;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .new-arrivals-right-acitve:hover, .new-arrivals-right-passive-acitve:hover {
   color: #b39797;
@@ -737,6 +779,8 @@ button, .button {
   display: block;
   padding-top: 2px;
   padding-bottom: 12px;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .category-left-form:hover {
   box-shadow: 0 0 3px 1px #f16d7f;
@@ -817,6 +861,8 @@ button, .button {
   font-size: 14px;
   color: #6f6e6e;
   line-height: 30px;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .trending__link:hover {
   color: #f16d7f;
@@ -846,6 +892,8 @@ button, .button {
   font-weight: bold;
   color: #222222;
   text-transform: uppercase;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .cart__product-discription-link:hover {
   color: #f16d7f;
@@ -893,6 +941,8 @@ button, .button {
   text-transform: uppercase;
   color: #f16d7f;
   padding: 17px 77px;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .cart__product-button-link-passive {
   font-size: 14px;
@@ -900,6 +950,8 @@ button, .button {
   text-transform: uppercase;
   padding: 17px 74px;
   color: #4a4a4a;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .cart__product-button-link-passive:hover {
   box-shadow: 0 0 7px #4a4a4a;
@@ -912,6 +964,8 @@ button, .button {
   margin: 11px 0;
   font-size: 16px;
   color: #c0c0c0;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .fas:hover {
   color: #4a4a4a;
@@ -937,6 +991,8 @@ button, .button {
   font-weight: 300;
   color: #c4c4c4;
   padding: 8px;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .pagination-link:hover {
   color: #f16d7f;
@@ -958,6 +1014,8 @@ button, .button {
   font-weight: 300;
   color: #f16d7f;
   padding: 11px 47px;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .pagination__right-link:hover {
   box-shadow: 0 0 7px #f16d7f;
@@ -1045,6 +1103,8 @@ button, .button {
   height: 40px;
   width: 40px;
   background-color: #e1e1e1;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .product-example .button-prev-link:hover, .product-example .button-next-link:hover {
   background-color: #f16d7f;
@@ -1108,6 +1168,8 @@ button, .button {
 }
 .product-discription-content-button {
   margin-top: 28px;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .product-discription-content-button:hover {
   box-shadow: 0 0 5px 2px #f16d7f;
@@ -1158,6 +1220,8 @@ button, .button {
   display: block;
   height: 280px;
   width: 261px;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .also-product:hover .also-star {
   display: flex;
@@ -1256,6 +1320,8 @@ button, .button {
   font-weight: bold;
   color: #4a4a4a;
   text-transform: uppercase;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .goods__footer-button:hover {
   outline: 1px solid #f16d7f;
@@ -1330,6 +1396,8 @@ button, .button {
   font-weight: 300;
   color: #b1b1b1;
   margin-bottom: 20px;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .apply__block-input:hover {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
@@ -1344,6 +1412,8 @@ button, .button {
   font-weight: bold;
   color: #4a4a4a;
   text-transform: uppercase;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .apply__block-button:hover {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
@@ -1386,6 +1456,8 @@ button, .button {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #f16d7f;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .apply__block-total-button:hover {
   box-shadow: 0px 0px 10px 0px #f16d7f;
@@ -1459,6 +1531,8 @@ button, .button {
   font-weight: bold;
   color: #4a4a4a;
   text-transform: uppercase;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .checkout__register-button:hover {
   color: #f16d7f;
@@ -1477,6 +1551,8 @@ button, .button {
   line-height: 20px;
   padding: 5px;
   margin: 44px 0 0 32px;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .checkout__logIn-button:hover {
   color: #f16d7f;
