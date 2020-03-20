@@ -104,96 +104,6 @@ a {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-.logo-image {
-  margin-right: 13px;
-  transition: all;
-  transition-duration: 0.2s;
-}
-.logo-image:hover {
-  filter: drop-shadow(0px 0px 10px #f16d7f);
-}
-
-button, .button, input {
-  border: none;
-}
-
-button, .button {
-  height: 38px;
-}
-
-.button-account {
-  width: 130px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f16d7f;
-  font-size: 15px;
-  font-weight: 300;
-  color: #fff;
-  letter-spacing: 0.03em;
-  position: relative;
-  transition: all;
-  transition-duration: 0.2s;
-}
-.button-account:hover {
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.17);
-}
-.button-account:focus + .drop {
-  transition: all;
-  transition-duration: 0.2s;
-  display: flex;
-  top: 70px;
-  z-index: 1;
-}
-
-.arrow {
-  margin-left: 8px;
-}
-
-.cart-image {
-  margin-right: 37px;
-  transition: all;
-  transition-duration: 0.2s;
-}
-.cart-image:hover {
-  filter: drop-shadow(0px 0px 10px #a3a3a3);
-}
-.cart-image:hover + .drop {
-  display: flex;
-  top: 71px;
-}
-
-.nav {
-  height: 51px;
-}
-
-.menu {
-  list-style-type: none;
-  /* убираем точки в списке */
-  display: flex;
-  justify-content: center;
-}
-.menu-link {
-  display: block;
-  padding: 17px 35px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #222222;
-  text-transform: uppercase;
-}
-.menu-list {
-  position: relative;
-  transition: all;
-  transition-duration: 0.2s;
-}
-.menu-list:hover .drop {
-  display: flex;
-}
-
 .drop {
   background-color: white;
   border-radius: 5px;
@@ -246,6 +156,97 @@ button, .button {
 }
 .drop-ul-img {
   margin-top: 18px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo-image {
+  margin-right: 13px;
+  transition: all;
+  transition-duration: 0.2s;
+}
+.logo-image:hover {
+  filter: drop-shadow(0px 0px 10px #f16d7f);
+}
+
+button, .button, input {
+  border: none;
+}
+
+button, .button {
+  height: 38px;
+}
+
+.button-account {
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f16d7f;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 0.03em;
+  position: relative;
+  transition: all;
+  transition-duration: 0.2s;
+  margin-left: 37px;
+}
+.button-account:hover {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.17);
+}
+
+.arrow {
+  margin-left: 8px;
+}
+
+.cart__block {
+  padding: 1px;
+  z-index: 1;
+  display: block;
+  position: relative;
+}
+.cart__block:hover {
+  filter: drop-shadow(0px 0px 1px #a3a3a3);
+}
+.cart__block:hover .drop {
+  z-index: 1;
+  display: flex;
+  top: 37px;
+}
+
+.cart-image {
+  transition: all;
+  transition-duration: 0.2s;
+}
+
+.nav {
+  height: 51px;
+}
+
+.menu {
+  list-style-type: none;
+  /* убираем точки в списке */
+  display: flex;
+  justify-content: center;
+}
+.menu-link {
+  display: block;
+  padding: 17px 35px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #222222;
+  text-transform: uppercase;
+}
+.menu-list {
+  position: relative;
+  transition: all;
+  transition-duration: 0.2s;
+}
+.menu-list:hover .drop {
+  display: flex;
 }
 
 .super-sale {
