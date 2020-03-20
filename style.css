@@ -1337,6 +1337,10 @@ button, .button {
   margin-right: 8px;
   padding: 10px 23px;
   outline: 1px solid #eaeaea;
+  -moz-appearance: textfield;
+}
+.option-2::-webkit-inner-spin-button {
+  display: none;
 }
 .option-3 {
   margin-right: 15px;
