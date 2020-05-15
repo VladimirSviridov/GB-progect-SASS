@@ -49,52 +49,56 @@
         </form>
     </div>
     <div class="header-right">
-        <a href="shopping-cart.html" class="cart-image"><img alt="cart" class="cart-image" src="img/cart.png"></a>
-        <div class="drop">
-            <div class="drop-flex">
-                <div class="cart__product">
-                    <a href="single-page.html" class="cart__img"><img src="img/product/cart-product-1.png"
-                                                                      alt="product-1"></a>
-                    <div class="cart__product-discription">
-                        <a href="single-page.html" class="cart__product-discription-link">Rebox Zane</a>
-                        <div class="cart__product-discription-star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+        <div class="cart__block">
+            <a href="shopping-cart.html" class="cart-image">
+                <img alt="cart" src="img/cart.png">
+            </a>
+            <div class="drop">
+                <div class="drop-flex">
+                    <div class="cart__product">
+                        <a href="single-page.html" class="cart__img"><img src="img/product/cart-product-1.png"
+                                                                          alt="product-1"></a>
+                        <div class="cart__product-discription">
+                            <a href="single-page.html" class="cart__product-discription-link">Rebox Zane</a>
+                            <div class="cart__product-discription-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="cart__product-discription-price">1  x   $250</span>
                         </div>
-                        <span class="cart__product-discription-price">1  x   $250</span>
+                        <i class="fas fa-times-circle"></i>
                     </div>
-                    <i class="fas fa-times-circle"></i>
-                </div>
-                <div class="cart__product-line"></div>
-                <div class="cart__product">
-                    <a href="single-page.html" class="cart__img"><img src="img/product/cart-product-2.png"
-                                                                      alt="product-2"></a>
-                    <div class="cart__product-discription">
-                        <a href="single-page.html" class="cart__product-discription-link">Rebox Zane</a>
-                        <div class="cart__product-discription-star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                    <div class="cart__product-line"></div>
+                    <div class="cart__product">
+                        <a href="single-page.html" class="cart__img"><img src="img/product/cart-product-2.png"
+                                                                          alt="product-2"></a>
+                        <div class="cart__product-discription">
+                            <a href="single-page.html" class="cart__product-discription-link">Rebox Zane</a>
+                            <div class="cart__product-discription-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="cart__product-discription-price">1  x   $250</span>
                         </div>
-                        <span class="cart__product-discription-price">1  x   $250</span>
+                        <i class="fas fa-times-circle"></i>
                     </div>
-                    <i class="fas fa-times-circle"></i>
-                </div>
-                <div class="cart__product-line"></div>
-                <div class="cart__product-total">
-                    <span>TOTAL</span>
-                    <span>$500.00</span>
-                </div>
-                <div class="cart__product-button">
-                    <a href="checkout.html" class="cart__product-button-link">CHECKOUT</a>
-                </div>
-                <div class="cart__product-button cart__product-button-passive">
-                    <a href="shopping-cart.html" class="cart__product-button-link-passive">GO TO CART</a>
+                    <div class="cart__product-line"></div>
+                    <div class="cart__product-total">
+                        <span>TOTAL</span>
+                        <span>$500.00</span>
+                    </div>
+                    <div class="cart__product-button">
+                        <a href="checkout.html" class="cart__product-button-link">CHECKOUT</a>
+                    </div>
+                    <div class="cart__product-button cart__product-button-passive">
+                        <a href="shopping-cart.html" class="cart__product-button-link-passive">GO TO CART</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -419,15 +423,15 @@
         <p class="product-discription-content-price">$561</p>
         <div class="product-discription-content-price-line"></div>
         <form class="product-discription-forms" action="#">
-            <fieldest>
+            <div class="product-discription-field">
                 <label for="color">CHOOSE COLOR</label>
                 <select name="color">
                     <option value="Red">Red</option>
                     <option value="Blue">Blue</option>
                     <option value="Black">Black</option>
                 </select>
-            </fieldest>
-            <fieldest>
+            </div>
+            <div class="product-discription-field">
                 <label for="size">CHOOSE SIZE</label>
                 <select name="size">
                     <option value="S">S</option>
@@ -435,11 +439,11 @@
                     <option value="L">L</option>
                     <option value="XL">XL</option>
                 </select>
-            </fieldest>
-            <fieldest>
+            </div>
+            <div class="product-discription-field">
                 <label for="number">QUANTITY</label>
-                <input type="number" name="quantity" min="1" max="5" step="1">
-            </fieldest>
+                <input type="number" name="quantity" min="1" max="5" value="2" step="1">
+            </div>
         </form>
         <a href="#" class="product-discription-content-button">
             <div><img src="img/single-page/cart-pink.png" alt="cart-pink"><span>Add to Cart</span></div>

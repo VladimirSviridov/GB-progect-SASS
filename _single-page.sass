@@ -22,6 +22,34 @@
       background-color: $color-site-active
 
 .product-discription
+  &-forms
+    display: flex
+    justify-content: space-between
+    width: 537px
+
+  &-field
+    display: flex
+    flex-direction: column
+
+    & label
+      margin-bottom: 10px
+
+    & select,
+    & input
+      width: 130px
+      outline: 1px solid #eaeaea
+      border: 0
+      padding: 12px 17px
+      font-family: inherit
+
+    & input
+      width: 110px
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none
+        margin: 0 /* <-- Apparently some margin are still there even though it's hidden */
+
   &-content
     padding-top: 73px
     padding-bottom: 122px
@@ -74,9 +102,6 @@
         margin-bottom: 63px
         width: 730px
         border: 1px solid #f2f2f2
-
-    &-forms
-      display: flex
 
     &-button
       margin-top: 28px

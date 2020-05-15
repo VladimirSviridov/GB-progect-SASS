@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0716044f05.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+
+    <!--Для ползунка-->
+    <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <title>Product</title>
 </head>
 <body>
@@ -49,52 +57,56 @@
         </form>
     </div>
     <div class="header-right">
-        <a href="shopping-cart.html" class="cart-image"><img alt="cart" class="cart-image" src="img/cart.png"></a>
-        <div class="drop">
-            <div class="drop-flex">
-                <div class="cart__product">
-                    <a href="single-page.html" class="cart__img"><img src="img/product/cart-product-1.png"
-                                                                      alt="product-1"></a>
-                    <div class="cart__product-discription">
-                        <a href="single-page.html" class="cart__product-discription-link">Rebox Zane</a>
-                        <div class="cart__product-discription-star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+        <div class="cart__block">
+            <a href="shopping-cart.html" class="cart-image">
+                <img alt="cart" src="img/cart.png">
+            </a>
+            <div class="drop">
+                <div class="drop-flex">
+                    <div class="cart__product">
+                        <a href="single-page.html" class="cart__img"><img src="img/product/cart-product-1.png"
+                                                                          alt="product-1"></a>
+                        <div class="cart__product-discription">
+                            <a href="single-page.html" class="cart__product-discription-link">Rebox Zane</a>
+                            <div class="cart__product-discription-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="cart__product-discription-price">1  x   $250</span>
                         </div>
-                        <span class="cart__product-discription-price">1  x   $250</span>
+                        <i class="fas fa-times-circle"></i>
                     </div>
-                    <i class="fas fa-times-circle"></i>
-                </div>
-                <div class="cart__product-line"></div>
-                <div class="cart__product">
-                    <a href="single-page.html" class="cart__img"><img src="img/product/cart-product-2.png"
-                                                                      alt="product-2"></a>
-                    <div class="cart__product-discription">
-                        <a href="single-page.html" class="cart__product-discription-link">Rebox Zane</a>
-                        <div class="cart__product-discription-star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                    <div class="cart__product-line"></div>
+                    <div class="cart__product">
+                        <a href="single-page.html" class="cart__img"><img src="img/product/cart-product-2.png"
+                                                                          alt="product-2"></a>
+                        <div class="cart__product-discription">
+                            <a href="single-page.html" class="cart__product-discription-link">Rebox Zane</a>
+                            <div class="cart__product-discription-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="cart__product-discription-price">1  x   $250</span>
                         </div>
-                        <span class="cart__product-discription-price">1  x   $250</span>
+                        <i class="fas fa-times-circle"></i>
                     </div>
-                    <i class="fas fa-times-circle"></i>
-                </div>
-                <div class="cart__product-line"></div>
-                <div class="cart__product-total">
-                    <span>TOTAL</span>
-                    <span>$500.00</span>
-                </div>
-                <div class="cart__product-button">
-                    <a href="checkout.html" class="cart__product-button-link">CHECKOUT</a>
-                </div>
-                <div class="cart__product-button cart__product-button-passive">
-                    <a href="shopping-cart.html" class="cart__product-button-link-passive">GO TO CART</a>
+                    <div class="cart__product-line"></div>
+                    <div class="cart__product-total">
+                        <span>TOTAL</span>
+                        <span>$500.00</span>
+                    </div>
+                    <div class="cart__product-button">
+                        <a href="checkout.html" class="cart__product-button-link">CHECKOUT</a>
+                    </div>
+                    <div class="cart__product-button cart__product-button-passive">
+                        <a href="shopping-cart.html" class="cart__product-button-link-passive">GO TO CART</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -403,7 +415,8 @@
     <aside class="category-left">
         <!--Не знаю как настроить стрелочки и как сделать
         блоки двигающимися при открытии предыдущего. Видимо js -->
-        <form action="#" class="header-form category-left-form">
+        <div class="category-left__form">
+            <form action="#" class="header-form category-left-form">
             <details class="header-browse category-left-browse">
                 <summary class="header-summary category-left-summary">Category</summary>
                 <div class="drop">
@@ -423,7 +436,9 @@
                 </div>
             </details>
         </form>
-        <form action="#" class="header-form category-left-form">
+        </div>
+        <div class="category-left__form">
+            <form action="#" class="header-form category-left-form">
             <details class="header-browse category-left-browse">
                 <summary class="header-summary category-left-summary">Category</summary>
                 <div class="drop">
@@ -443,7 +458,9 @@
                 </div>
             </details>
         </form>
-        <form action="#" class="header-form category-left-form">
+        </div>
+        <div class="category-left__form">
+            <form action="#" class="header-form category-left-form">
             <details class="header-browse category-left-browse">
                 <summary class="header-summary category-left-summary">Category</summary>
                 <div class="drop">
@@ -463,6 +480,7 @@
                 </div>
             </details>
         </form>
+        </div>
     </aside>
     <div class="category-right">
         <div class="category-right-forms">
@@ -503,6 +521,9 @@
             </div>
             <div class="price">
                 <h2 class="trending__h2">Price</h2>
+
+                <!--Для ползунка-->
+                <input type="text" class="js-range-slider" name="my_range" value="" />
 
             </div>
         </div>
@@ -784,5 +805,9 @@
         <a class="footer-fa" href="https://www.google.com"> <i class="fab fa-google-plus-g"></i></a>
     </div>
 </footer>
+
+
+<!--Для ползунка-->
+<script src="js/product.js"></script>
 </body>
 </html>
